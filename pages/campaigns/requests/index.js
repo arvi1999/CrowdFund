@@ -60,6 +60,13 @@ class RequestsIndex extends Component {
               </Link>
             </Grid.Column>
           </Grid.Row>
+          <Grid.Row>
+            <Grid.Column>
+              <div>
+                Found {this.props.requestsCount} requests.
+              </div>
+            </Grid.Column>
+          </Grid.Row>
         </Grid>
         <br />
         <Table celled color='red'>
