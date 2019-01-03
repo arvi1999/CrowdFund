@@ -5,11 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-<<<<<<< HEAD
-    "dev": "next dev"
-=======
     "dev": "node server.js"
->>>>>>> campaign
   },
   "author": "@rvi...",
   "license": "ISC",

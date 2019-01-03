@@ -3,10 +3,7 @@ import Layout from '../../components/Layout';
 import {Form, Button, Input, Message} from 'semantic-ui-react';
 import factory from '../../ethereum/factory';
 import web3 from '../../ethereum/web3';
-<<<<<<< HEAD
-=======
 import {Link, Router} from '../../routes';
->>>>>>> campaign
 
 class CampaignNew extends Component {
   state = {
@@ -24,11 +21,8 @@ class CampaignNew extends Component {
       .send({
         from: accounts[0]
       });
-<<<<<<< HEAD
-=======
 
       Router.pushRoute('/');
->>>>>>> campaign
     } catch(err) {
       this.setState({errorMessage: err.message});
     }
@@ -49,11 +43,7 @@ class CampaignNew extends Component {
               onChange={event => this.setState({minimumContribution: event.target.value})}
             />
           </Form.Field>
-<<<<<<< HEAD
-          <Message error header='Oops!' content={this.state.errorMessage} />
-=======
           <Message floating error header='Oops!' content={this.state.errorMessage} />
->>>>>>> campaign
           <Button loading={this.state.loading} type='submit' primary>Create Campaign</Button>
         </Form>
       </Layout>
