@@ -43,8 +43,10 @@ contract Campaign {
     function contribute() public payable {
         require(msg.value >= minimumContribution);
         //approvers.push(msg.sender);
-        approvers[msg.sender] = true;
-        approversCount++;
+        if(!approvers[msg.sender]) {
+            approvers[msg.sender] = true;
+            approversCount++;
+        }
     }
 
     function createRequest(string description, uint value, address recipient)
@@ -73,6 +75,10 @@ contract Campaign {
         require(request.approvalCount > (approversCount/2));
         request.recipient.transfer(request.value);
         request.complete = true;
+    }
+
+    function getSender() public view returns(address){
+        return msg.sender;
     }
 
     function getSummary() public view returns(
