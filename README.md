@@ -4,7 +4,7 @@ CrowdFund is a Funding platform for creative Projects managed by an aothorized m
  <br/><br/>Each & every contributor can track the status of all requests made by manager of Campaign for transaction.
  <br/><br/>
  
- For demo of CrowdFund project: <br/>
+ How CrowdFund work? : <br/>
  Step 1: Clone the files  
  https://github.com/arvi1999/CrowdFund
  
